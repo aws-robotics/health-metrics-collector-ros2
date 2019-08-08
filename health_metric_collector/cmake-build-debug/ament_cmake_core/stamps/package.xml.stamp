@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>health_metric_collector_node</name>
+  <version>1.0.0</version>
+  <description>Package providing a ROS node for interacting with Amazon Lex</description>
+
+  <author email="ros-contributions@amazon.com">AWS RoboMaker</author>
+  <maintainer email="ros-contributions@amazon.com">AWS RoboMaker</maintainer>
+
+  <license>Apache 2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <build_depend>rclcpp</build_depend>
+  <build_depend>ros_monitoring_msgs</build_depend>
+  <build_depend>aws_ros2_common</build_depend>
+  <build_depend>aws_common</build_depend>
+
+  <exec_depend>rclcpp</exec_depend>
+  <exec_depend>ros_monitoring_msgs</exec_depend>
+  <exec_depend>aws_common</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

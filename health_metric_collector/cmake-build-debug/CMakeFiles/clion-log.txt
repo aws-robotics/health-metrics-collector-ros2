@@ -1,0 +1,40 @@
+/usr/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/cevans/health_metrics/src/health-metrics-collector-ros2/health_metric_collector
+-- The C compiler identification is GNU 7.4.0
+-- The CXX compiler identification is GNU 7.4.0
+-- Check for working C compiler: /usr/bin/cc
+-- Check for working C compiler: /usr/bin/cc -- works
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Check for working CXX compiler: /usr/bin/c++
+-- Check for working CXX compiler: /usr/bin/c++ -- works
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Found ament_cmake_ros: 0.7.0 (/home/cevans/health_metrics/.rosdev/install/share/ament_cmake_ros/cmake)
+-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.6.8", minimum required is "3") 
+-- Using PYTHON_EXECUTABLE: /usr/bin/python3
+-- Found rclcpp: 0.7.5 (/home/cevans/health_metrics/.rosdev/install/share/rclcpp/cmake)
+-- Found rosidl_adapter: 0.7.3 (/home/cevans/health_metrics/.rosdev/install/share/rosidl_adapter/cmake)
+-- Found rmw_implementation_cmake: 0.7.1 (/home/cevans/health_metrics/.rosdev/install/share/rmw_implementation_cmake/cmake)
+-- Looking for pthread.h
+-- Looking for pthread.h - found
+-- Looking for pthread_create
+-- Looking for pthread_create - not found
+-- Looking for pthread_create in pthreads
+-- Looking for pthread_create in pthreads - not found
+-- Looking for pthread_create in pthread
+-- Looking for pthread_create in pthread - found
+-- Found Threads: TRUE  
+-- TARGET_ARCH not specified; inferring host OS to be platform compilation target
+-- Building AWS libraries as shared objects
+-- Generating linux build config
+-- Building project version: 1.6.53
+-- Found AWS SDK for C++, Version: 1.6.53, Install Root:/home/cevans/health_metrics/install/aws_common, Platform Prefix:, Platform Dependent Libraries: pthread;crypto;ssl;z;curl
+-- Found aws_ros2_common: 1.0.0 (/home/cevans/health_metrics/install/aws_ros2_common/share/aws_ros2_common/cmake)
+-- Found ros_monitoring_msgs: 1.0.0 (/home/cevans/health_metrics/install/ros_monitoring_msgs/share/ros_monitoring_msgs/cmake)
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/cevans/health_metrics/src/health-metrics-collector-ros2/health_metric_collector/cmake-build-debug
