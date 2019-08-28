@@ -22,8 +22,6 @@
 #include <vector>
 
 
-namespace ros_monitoring_msgs {
-namespace msg {
 /**
  * @brief Interface for MetricManager.
  */
@@ -37,14 +35,14 @@ public:
     /**
      * @brief create a metric.
      */
-    virtual MetricData CreateMetric() const = 0;
+    virtual ros_monitoring_msgs::msg::MetricData CreateMetric() const = 0;
 
     /**
      * @brief add a metric to list of metrics to be published.
      *
      * @param md a metric.
      */
-    virtual void AddMetric(MetricData md) = 0;
+    virtual void AddMetric(ros_monitoring_msgs::msg::MetricData md) = 0;
 
     /**
      * @brief publishes all metrics and then discards them.
@@ -66,21 +64,19 @@ public:
     int topic_buffer_size
     ) :
       node_(node),
-      publisher_(node->create_publisher<MetricList>(metrics_topic_name, topic_buffer_size)) {}
+      publisher_(node->create_publisher<ros_monitoring_msgs::msg::MetricList>(metrics_topic_name, topic_buffer_size)) {}
 
   virtual void AddDimension(const std::string &name, const std::string &value) override final;
 
-  virtual MetricData CreateMetric() const override final;
+  virtual ros_monitoring_msgs::msg::MetricData CreateMetric() const override final;
 
-  virtual void AddMetric(MetricData md) override final;
+  virtual void AddMetric(ros_monitoring_msgs::msg::MetricData md) override final;
 
   virtual void Publish() override final;
 
 private:
   rclcpp::Node::SharedPtr node_;
-  rclcpp::Publisher<MetricList>::SharedPtr publisher_;
-  MetricList mlist_;
-  MetricData dimensions_;
+  rclcpp::Publisher<ros_monitoring_msgs::msg::MetricList>::SharedPtr publisher_;
+  ros_monitoring_msgs::msg::MetricList mlist_;
+  ros_monitoring_msgs::msg::MetricData dimensions_;
 };
-
-}}  // namespace ros_monitoring_msgs::msg

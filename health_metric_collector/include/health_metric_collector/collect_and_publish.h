@@ -31,8 +31,8 @@ public:
    * @param c a list of metrics collectors.
    */
   CollectAndPublish(
-    std::shared_ptr<ros_monitoring_msgs::msg::MetricManagerInterface> mg,
-    std::vector<std::shared_ptr<ros_monitoring_msgs::msg::MetricCollectorInterface>> & c
+    std::shared_ptr<MetricManagerInterface> mg,
+    std::vector<std::shared_ptr<MetricCollectorInterface>> & c
     ) : mg_(mg), collectors_(c) {}
 
   /**
@@ -49,7 +49,7 @@ public:
   }
 
 private:
-  std::shared_ptr<ros_monitoring_msgs::msg::MetricManagerInterface> mg_;
-  const std::vector<std::shared_ptr<ros_monitoring_msgs::msg::MetricCollectorInterface>> &
+  std::shared_ptr<MetricManagerInterface> mg_;
+  const std::vector<std::shared_ptr<MetricCollectorInterface>> &
     collectors_;
 };

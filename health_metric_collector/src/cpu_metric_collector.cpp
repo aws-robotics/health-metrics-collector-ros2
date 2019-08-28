@@ -22,7 +22,6 @@
 
 using namespace ros_monitoring_msgs::msg;
 
-
 #define BASE_METRIC_NAME "cpu_usage_"
 
 

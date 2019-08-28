@@ -22,7 +22,6 @@
 
 using namespace ros_monitoring_msgs::msg;
 
-
 #define MEGA (1000000)
 
 

@@ -19,8 +19,6 @@
 #include <health_metric_collector/metric_manager.h>
 
 
-namespace ros_monitoring_msgs {
-namespace msg {
 /**
  * @brief collects metrics from sysinfo.
  *
@@ -30,7 +28,7 @@ namespace msg {
 class SysInfoCollector : public MetricCollectorInterface
 {
 public:
-  SysInfoCollector(std::shared_ptr<ros_monitoring_msgs::msg::MetricManagerInterface> m)
+  SysInfoCollector(std::shared_ptr<MetricManagerInterface> m)
     : MetricCollectorInterface(m) {}
 
   void Collect() override final;
@@ -38,5 +36,3 @@ public:
 private:
   void AddMetric(const std::string & name, const double value, const std::string & unit);
 };
-
-}}  // namespace ros_monitoring_msgs::msg

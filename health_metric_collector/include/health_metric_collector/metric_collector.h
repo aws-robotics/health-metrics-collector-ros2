@@ -17,9 +17,6 @@
 
 #include <health_metric_collector/metric_manager.h>
 
-namespace ros_monitoring_msgs {
-namespace msg {
-
 /**
  * @brief Interface for a metrics collector.
  */
@@ -30,7 +27,7 @@ public:
    * @brief Constructor.
    */
   MetricCollectorInterface(
-    std::shared_ptr<ros_monitoring_msgs::msg::MetricManagerInterface> mgr
+    std::shared_ptr<MetricManagerInterface> mgr
     ) : mgr_(mgr) {}
 
   /**
@@ -42,7 +39,5 @@ protected:
   /**
    * @brief creates metric entries and publishes them.
    */
-  std::shared_ptr<ros_monitoring_msgs::msg::MetricManagerInterface> mgr_;
+  std::shared_ptr<MetricManagerInterface> mgr_;
 };
-
-}}  // namespace ros_monitoring_msgs::msg
