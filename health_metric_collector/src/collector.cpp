@@ -29,8 +29,8 @@
 
 
 using namespace Aws::Client;
-using namespace ros_monitoring_msgs::msg;
 using namespace std::chrono_literals;
+using namespace ros_monitoring_msgs::msg;
 
 
 #define DEFAULT_INTERVAL_SEC 5

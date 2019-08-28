@@ -21,8 +21,6 @@
 #include <health_metric_collector/metric_manager.h>
 
 
-namespace ros_monitoring_msgs {
-namespace msg {
 /**
  * collects cpu usage metric.
  */
@@ -34,7 +32,7 @@ public:
    *
    * @param m metric manager which creates and aggregates metrics.
    */
-  CPUMetricCollector(std::shared_ptr<ros_monitoring_msgs::msg::MetricManagerInterface> m)
+  CPUMetricCollector(std::shared_ptr<MetricManagerInterface> m)
     : MetricCollectorInterface(m) {}
 
   /**
@@ -49,5 +47,3 @@ private:
   std::shared_ptr<CPUStats> old_;
   std::shared_ptr<CPUStats> new_;
 };
-
-}}  // namespace ros_monitoring_msgs::msg
