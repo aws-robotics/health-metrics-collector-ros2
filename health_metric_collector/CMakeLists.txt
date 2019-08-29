@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.5)
 
-project(health_metric_collector_node)
+project(health_metric_collector)
 
 
 # Default to C++14
