@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <package format="2">
-  <name>health_metric_collector_node</name>
+  <name>health_metric_collector</name>
   <version>1.0.0</version>
-  <description>Package providing a ROS node for interacting with Amazon Lex</description>
+  <description>Package providing a ROS node for sending health metrics to Cloudwatch Metrics</description>
 
   <author email="ros-contributions@amazon.com">AWS RoboMaker</author>
   <maintainer email="ros-contributions@amazon.com">AWS RoboMaker</maintainer>
