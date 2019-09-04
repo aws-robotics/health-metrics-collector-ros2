@@ -1,3 +1,0 @@
-<launch>
-    <test test-name="test_health_metric_collector" pkg="health_metric_collector" type="test_health_metric_collector"/>
-</launch>
