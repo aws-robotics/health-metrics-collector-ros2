@@ -48,7 +48,11 @@ int main(int argc, char ** argv)
 {
   rclcpp::init(argc, argv);
 
-  auto node = rclcpp::Node::make_shared(DEFAULT_NODE_NAME);
+  rclcpp::NodeOptions node_options;
+  node_options.allow_undeclared_parameters(true);
+  node_options.automatically_declare_parameters_from_overrides(true);
+
+  auto node = rclcpp::Node::make_shared(DEFAULT_NODE_NAME, std::string(), node_options);
 
   auto param_reader = std::make_shared<Ros2NodeParameterReader>(node);
 
