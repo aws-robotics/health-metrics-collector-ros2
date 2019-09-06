@@ -8,3 +8,6 @@ Changelog for package health_metric_collector
   * Update to use non-legacy ParameterReader API
   * increment package version
 * Contributors: M. M
+
+1.0.0 (2019-03-20)
+------------------

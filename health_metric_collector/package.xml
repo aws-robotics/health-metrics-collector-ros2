@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
-<package format="2">
+<package format="3">
   <name>health_metric_collector</name>
-  <version>1.0.0</version>
+  <version>3.0.0</version>
   <description>Package providing a ROS node for sending health metrics to Cloudwatch Metrics</description>
 
   <author email="ros-contributions@amazon.com">AWS RoboMaker</author>
