@@ -2,8 +2,8 @@
 Changelog for package health_metric_collector
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.0 (2019-09-06)
+------------------
 * remove changelog for new release
 * Add launch dependencies
 * Update version to 3.0.0 for first ROS2 release (`#5 <https://github.com/aws-robotics/health-metrics-collector-ros2/issues/5>`_)
