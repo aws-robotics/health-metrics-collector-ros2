@@ -14,7 +14,6 @@ endif ()
 
 
 find_package(ament_cmake REQUIRED)
-find_package(ament_cmake_gmock REQUIRED)
 find_package(rclcpp REQUIRED)
 find_package(aws_common REQUIRED)
 find_package(aws_ros2_common REQUIRED)
@@ -96,13 +95,16 @@ install(DIRECTORY config/ DESTINATION share/${PROJECT_NAME}/config)
 ## Tests ##
 #############
 
-ament_add_gmock(test_health_metric_collector
-  test/health_metric_collector_test.cpp)
-target_include_directories(test_health_metric_collector
-  PRIVATE include)
-target_link_libraries(test_health_metric_collector
-        ${HEALTH_METRIC_COLLECTOR_LIBRARY_TARGET}
-        ${LIB_DEPS})
-
+if(BUILD_TESTING)
+  find_package(ament_cmake_gmock REQUIRED)
+  
+  ament_add_gmock(test_health_metric_collector
+    test/health_metric_collector_test.cpp)
+  target_include_directories(test_health_metric_collector
+    PRIVATE include)
+  target_link_libraries(test_health_metric_collector
+          ${HEALTH_METRIC_COLLECTOR_LIBRARY_TARGET}
+          ${LIB_DEPS})
+endif()
 
 ament_package()
