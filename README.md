@@ -65,9 +65,8 @@ _Note: If building the master branch instead of a release branch you may need to
 
         source ~/ros-workspace/install/local_setup.bash
         
-- Build and run the unit tests
+- Run the unit tests
 
-        colcon build --packages-select health_metric_collector --cmake-target tests
         colcon test --packages-select health_metric_collector && colcon test-result --all
 
 
