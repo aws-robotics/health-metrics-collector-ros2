@@ -2,8 +2,8 @@
 Changelog for package health_metric_collector
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Forthcoming
------------
+3.0.1 (2019-09-20)
+------------------
 * Bump version to 3.0.1
 * Replacing sample_application.launch with an equivalent launch script
 * Guard test targets with if(BUILD_TESTING)
