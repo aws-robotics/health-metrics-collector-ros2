@@ -10,19 +10,11 @@ The source code is released under an [Apache 2.0].
 
 **Author**: AWS RoboMaker<br/>
 **Affiliation**: [Amazon Web Services (AWS)]<br/>
-**Maintainer**: AWS RoboMaker, ros-contributions@amazon.com
+
+RoboMaker cloud extensions rely on third-party software licensed under open-source licenses and are provided for demonstration purposes only. Incorporation or use of RoboMaker cloud extensions in connection with your production workloads or commercial product(s) or devices may affect your legal rights or obligations under the applicable open-source licenses. License information for this repository can be found [here](https://github.com/aws-robotics/health-metrics-collector-ros2/blob/master/LICENSE). AWS does not provide support for this cloud extension. You are solely responsible for how you configure, deploy, and maintain this cloud extension in your workloads or commercial product(s) or devices.
 
 ### Supported ROS Distributions
 - Dashing
-
-### Build status
-* GitHub Action Status
-     * master: [![Build & Test](https://github.com/aws-robotics/health-metrics-collector-ros2/workflows/Build%20&%20Test/badge.svg?branch=master&event=schedule)](https://github.com/aws-robotics/health-metrics-collector-ros2/actions?query=workflow%3A"Build+%26+Test"+event%3Aschedule)
-     * release-latest: [![Build & Test release-latest](https://github.com/aws-robotics/health-metrics-collector-ros2/workflows/Build%20&%20Test%20release-latest/badge.svg?branch=master&event=schedule)](https://github.com/aws-robotics/health-metrics-collector-ros2/actions?query=workflow%3A"Build+%26+Test+release-latest"+event%3Aschedule)
-
-
-* ROS build farm:
-   * ROS Dashing @ u18.04 Bionic [![Build Status](http://build.ros2.org/job/Dbin_uB64__health_metric_collector__ubuntu_bionic_amd64__binary/badge/icon)](http://build.ros2.org/job/Dbin_uB64__health_metric_collector__ubuntu_bionic_amd64__binary)
 
 ## Installation
 
@@ -31,12 +23,6 @@ You will need to create an AWS Account and configure the credentials to be able 
 
 This node will require the following AWS account IAM role permissions:
 - `cloudwatch:PutMetricData`
-
-### Binaries
-On Ubuntu you can install the latest version of this package using the following command
-
-        sudo apt-get update
-        sudo apt-get install -y ros-$ROS_DISTRO-health-metric-collector
 
 ### Building from Source
 
@@ -113,13 +99,6 @@ None
 
 #### Services
 None
-
-
-## Bugs & Feature Requests
-Please contact the team directly if you would like to request a feature.
-
-Please report bugs in [Issue Tracker].
-
 
 [`cloudwatch_metrics_collector`]: https://github.com/aws-robotics/cloudwatchmetrics-ros2
 [Amazon Web Services (AWS)]: https://aws.amazon.com/
